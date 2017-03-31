@@ -1,23 +1,24 @@
-# react-native-fence-html
+# fence-html-rn
 
-[![Travis Build Status](https://img.shields.io/travis/Thomas101/react-native-fence-html.svg)](http://travis-ci.org/Thomas101/react-native-fence-html)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/v/react-native-fence-html.svg?maxAge=2592000)](https://www.npmjs.com/package/react-native-fence-html)
-[![npm](https://img.shields.io/npm/l/react-native-fence-html.svg?maxAge=2592000)](https://github.com/Thomas101/react-native-fence-html/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/fence-html-rn.svg?maxAge=2592000)](https://www.npmjs.com/package/fence-html-rn)
+[![npm](https://img.shields.io/npm/l/react-native-fence-html.svg?maxAge=2592000)](https://github.com/langolonerdit/fence-html-rn/blob/master/LICENSE)
 
 A react native component that renders HTML as native views. This library is useful for rendering html snippets such as those that you get from wysiwyg text editors.
 
-![Screenshot](https://raw.githubusercontent.com/Thomas101/react-native-fence-html/master/gh-images/preview.jpg "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/langolonerdit/fence-html-rn/master/gh-images/preview.jpg "Screenshot")
+
+**IMPORTANT NOTE**: this package is a fork of [react-native-fence-html](https://github.com/Thomas101/react-native-fence-html). It was published in order to properly merge custom and default renderers (based on [this pull request](https://github.com/Thomas101/react-native-fence-html/pull/12))
 
 ## Add it to your project
 ```
-npm install react-native-fence-html --save
+npm install fence-html-rn --save
 ```
 
 ## Usage
 
 ```js
-import HTML from 'react-native-fence-html'
+import HTML from 'fence-html-rn'
 
 ...
 
@@ -59,14 +60,14 @@ render() {
 			// the background
 			htmlStyles={styles}
 
-			// Callback for when the user taps on a link. Oh look! You
 			// get the href passed back. Handy if you want to send
+			// Callback for when the user taps on a link. Oh look! You
 			// someone somewhere :-)
-			onLinkPress={(evt, href) => console.log(href)} />
+			onLinkPress={(evt, href) => console.log(href)}
 
 			// Renderers to use for rendering specific HTML elements.
 			// Default renderers are pre-provided in HTMLRenderers.js.
-			renderers={renderers}
+			renderers={renderers} />
 	)
 }
 ```
