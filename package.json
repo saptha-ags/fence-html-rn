@@ -1,8 +1,8 @@
 {
   "name": "fence-html-rn",
-  "author": "Thomas Beverley",
+  "author": "Aronne Brivio",
   "license": "BSD-2-Clause",
-  "repository": "https://github.com/langolonerdit/react-native-fence-html",
+  "repository": "https://github.com/langolonerdit/fence-html-rn",
   "description": "React Native component that renders HTML as native views",
   "keywords": [
     "react-native",
@@ -10,7 +10,7 @@
     "react-native-component",
     "html"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "standard"
   },
